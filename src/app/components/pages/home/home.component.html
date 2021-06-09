@@ -1,0 +1,14 @@
+<div class="rule"></div>
+<div class="full-page">
+    <div class="form-center">
+        <div class="form">
+            <h1> ADMIN </h1>
+            <form ([formGroup])="formLogin" (Submit)="onSubmit(formLogin)">
+                <br><br>
+                <input type="text" placeholder="Enter Username" formControlName="uname"> <br> <br>
+                <input type="text" placeholder="Enter Password" formControlName="pswd"> <br> <br>
+                <button type="submit" class="btn btn-outline-warning">LogIn</button>
+            </form>
+        </div>
+    </div>
+</div>
