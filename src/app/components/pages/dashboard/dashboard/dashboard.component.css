@@ -1,0 +1,17 @@
+.rule{
+    height: 250px;
+}
+
+.form-center{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form{
+    width:500px;
+    height: 250px;
+    background-color: #ffff;
+    box-shadow: 10px 10px 8px gray;
+    border-radius: 10px;
+}

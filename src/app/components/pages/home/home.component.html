@@ -3,11 +3,11 @@
     <div class="form-center">
         <div class="form">
             <h1> ADMIN </h1>
-            <form ([formGroup])="formLogin" (Submit)="onSubmit(formLogin)">
+            <form [formGroup]="formLogin">
                 <br><br>
-                <input type="text" placeholder="Enter Username" formControlName="uname"> <br> <br>
-                <input type="text" placeholder="Enter Password" formControlName="pswd"> <br> <br>
-                <button type="submit" class="btn btn-outline-warning">LogIn</button>
+                <input type="string" formControlName="uname" placeholder="Enter Username"/> <br> <br>
+                <input type="password" formControlName="pswd" placeholder="Enter Password"/> <br> <br>
+                <button type="button" class="btn btn-outline-warning" [disabled]="formLogin.invalid" (click)="onSubmit()">LogIn</button>
             </form>
         </div>
     </div>

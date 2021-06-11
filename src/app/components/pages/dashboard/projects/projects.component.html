@@ -1,0 +1,28 @@
+<br>
+<div class="container">
+    <table class="table table-striped">
+      <thead >
+        <tr>
+            <th>Name</th>
+            <th>Owner</th>
+            <th>Description</th>
+            <th>Collaboration</th>
+            <th>Creation Date</th>
+            <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let project of projects">
+            <td>{{project.name}}</td>
+            <td>{{project.owners}}</td>
+            <td>{{project.description}}</td>
+            <td>{{project.collaboration.length}}</td>
+            <td>{{project.creationDate}}</td>
+            <td>
+                <button type="button" (click)="deleteProject(project.name)">Delete</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
