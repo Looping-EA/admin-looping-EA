@@ -16,6 +16,7 @@ import { ProjectsComponent } from './components/pages/dashboard/projects/project
 import { DashboardComponent } from './components/pages/dashboard/dashboard/dashboard.component';
 import { UnauthorizedComponent } from './components/pages/unauthorized/unauthorized.component';
 import { NotfoundComponent } from './component/pages/notfound/notfound.component';
+import { ContactComponent } from './components/pages/dashboard/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotfoundComponent } from './component/pages/notfound/notfound.component
     ProjectsComponent,
     DashboardComponent,
     UnauthorizedComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

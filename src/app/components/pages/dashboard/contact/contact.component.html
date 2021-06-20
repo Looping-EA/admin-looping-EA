@@ -1,0 +1,21 @@
+<br>
+<div class="container">
+    <table class="table table-striped">
+      <thead >
+        <tr>
+            <th>Username</th>
+            <th>Date</th>
+            <th>Message</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let contact of contacts">
+            <td>{{contact.uname}}</td>
+            <td>{{contact.date}}</td>
+            <td>{{contact.message}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

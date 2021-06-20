@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './component/pages/notfound/notfound.component';
+import { ContactComponent } from './components/pages/dashboard/contact/contact.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard/dashboard.component';
 import { ProjectsComponent } from './components/pages/dashboard/projects/projects.component';
 import { UsersComponent } from './components/pages/dashboard/users/users.component';
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'dashboard/projects', component: ProjectsComponent
+  },
+  {
+    path: 'dashboard/contact', component: ContactComponent
   },
   {
     path: 'dashboard/:uname', component: DashboardComponent
