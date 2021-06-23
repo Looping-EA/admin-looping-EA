@@ -5,6 +5,7 @@ COPY package.json ./
 RUN npm install
 COPY . .
 RUN npm build
+RUN ls
 ### STAGE No 2: Run ###
 FROM nginx:1.17.1-alpine
 COPY --from=build /usr/src/app/dist/admin-looping-EA /usr/share/nginx/html
