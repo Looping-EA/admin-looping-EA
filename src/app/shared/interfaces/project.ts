@@ -1,7 +1,7 @@
 import { User } from "./user";
 
 export interface Project{
-    owners: User[];
+    owner: User;
     collaboration: User[];
     description: String;
     name: String;
